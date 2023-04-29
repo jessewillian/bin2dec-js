@@ -1,0 +1,77 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Instrument Serif', serif;
+    width: 100%;
+    height: 100vh;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-content{
+    width: 40%;
+    background-color: bisque;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-shadow: 7px 4px 20px #000;
+}
+
+.box-input {
+    display:flex;
+    flex-direction: column
+}
+.box-input .btn {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display:flex;
+    gap: 10px;
+}
+
+label {
+    font-size: 1.3rem;
+}
+
+.bin, .result {
+    width: 70%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #fff;
+    letter-spacing: 5px;
+}
+.bin:focus {
+    outline: none;
+}
+
+.btn {
+    height: 43px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn:hover {
+    background-color: #7f9feb;
+}
+
+@media only screen and (max-width: 970px){
+    .wrapper {
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+    }
+}
